@@ -5,27 +5,27 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>An Overview of JavaScript by Nathan Alderson</title>
+    <title>The Enneagram for Engineers</title>
 
-    <meta name="description" content="A Talk Given to Adtran's Catalytic Coding user group for it's
-        April Meeting" />
+    <meta name="description" content="A conference talk on the Enneagram for Engineers" />
     <meta name="author" content="Nathan Alderson" />
 
     <link href="http://fonts.googleapis.com/css?family=Inconsolata:400,700|Cabin:400,700,400italic" rel="stylesheet" />
 
-    <link rel="stylesheet/less" type="text/css" href="css/scratch.less" />
-    <script src="js/less-1.3.0.min.js" type="text/javascript"></script>
+    <link rel="stylesheet/less" type="text/css" href="{{ url_for('static', filename='css/scratch.less') }}" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- Code Highlighting via highlight.js -->
-    <link rel="stylesheet" href="css/solarized_light.css">
-    <script src="js/highlight.pack.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/solarized_light.css') }}">
+    <script src="{{ url_for('static', filename='js/highlight.pack.js') }}"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
-    <link rel="shortcut icon" href="favicon.png" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}" />
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='apple-touch-icon.png') }}" />
 </head>
 
 <body class="impress-not-supported">
@@ -38,31 +38,19 @@
 <div id="impress">
 
     <div id="title" class="step" data-x="0" data-y="0" data-z="0" data-scale="6">
-        <span class="an-overview">An overview <span class="of">of</span></span>
-        <h1>JavaScript</h1>
-        <div class="byline">by
-            <h2><strong>Nathan Alderson</strong></h2>
-        </div>
+        <span class="the">The</span>
+        <h1>Enneagram</h1>
+        <div class="subtitle">for <br/><strong>Engineers</strong></div>
     </div>
 
     <div id="about" class="step" data-x="0" data-y="0" data-z="1200" data-scale="2" data-rotate-y="90">
-        <h1>Who am I?</h1>
+        <h1>Nathan Alderson</h1>
         <hr/>
-        <div class="bullets"> <ul>
-            <li>BE in CmpE from Vanderbilt University</li>
-            <li>Six years at Adtran</li>
-            <li>Mostly TACore developer</li>
-            <li>Things I like:
-            <ul>
-                <li>Software</li>
-                <li>Languages</li>
-                <li>Tools</li>
-            </ul></li>
-        </ul> </div>
         <div class="social">
-            <div><img src="img/twitter.png" />@nathanalderson</div>
-            <div><img src="img/facebook.png" />facebook.com/nathanalderson</div>
-            <div><img src="img/github.png" />github.com/nathanalderson</div>
+            <div><i class="fab fa-twitter"></i>@nathanalderson</div>
+            <div><i class="fab fa-github"></i>github.com/nathanalderson</div>
+            <div><i class="fab fa-keybase"></i>keybase.io/nathanalderson</div>
+            <div><i class="fas fa-globe"></i>nathanalderson.com</div>
         </div>
     </div>
 
@@ -82,7 +70,7 @@
     <div id="the-good-parts" class="step" data-dx="1000">
         <h1>Why not?</h1>
         <div id="reasons">
-            <img src="img/thegoodparts.jpg" />
+            <img src="{{ url_for('static', filename='img/thegoodparts.jpg') }}" />
         </div>
     </div>
 
@@ -94,7 +82,7 @@
         <p>C
         <span class="analogy">is to</span></p>
         <p id="ceelo"><span class="hidden appear">Cee Lo</span></p>
-        <p><img class="hidden appear" src="img/ceelo.jpg" /></p>
+        <p><img class="hidden appear" src="{{ url_for('static', filename='img/ceelo.jpg') }}" /></p>
     </div>
 
     <div id="history" class="step">
@@ -113,22 +101,22 @@
         <h1>Tools</h1>
         <div id="reasons">
             <h2>A Good Web Browser</h2>
-            <img src="img/chrome.png"/>Chrome
-            <img src="img/firefox.png"/>Firefox
-            <img src="img/safari.png"/>Safari
+            <img src="{{ url_for('static', filename='img/chrome.png') }}"/>Chrome
+            <img src="{{ url_for('static', filename='img/firefox.png') }}"/>Firefox
+            <img src="{{ url_for('static', filename='img/safari.png') }}"/>Safari
             <h2>Other Web Browsers</h2>
-            <img src="img/ie7.png"/>IE7, IE8, IE9...
+            <img src="{{ url_for('static', filename='img/ie7.png') }}"/>IE7, IE8, IE9...
             <h2>Debugger</h2>
-            <img src="img/chrome.png"/>Chrome
-            <img src="img/firebug.png"/>Firebug
+            <img src="{{ url_for('static', filename='img/chrome.png') }}"/>Chrome
+            <img src="{{ url_for('static', filename='img/firebug.png') }}"/>Firebug
             <h2>Text Editor</h2>
-            <img src="img/vim.png"/>Vim (of course)
+            <img src="{{ url_for('static', filename='img/vim.png') }}"/>Vim (of course)
             <h2>Non-browser Environment</h2>
-            <img src="img/node.png"/>node.js
+            <img src="{{ url_for('static', filename='img/node.png') }}"/>node.js
         </div>
     </div>
 
-    <img class="step" id="codez" src="img/c0dez.jpg" data-dx="0" data-rotate-y="90" data-dz="-1000" data-dy="0"/>
+    <img class="step" id="codez" src="{{ url_for('static', filename='img/c0dez.jpg') }}" data-dx="0" data-rotate-y="90" data-dz="-1000" data-dy="0"/>
 
     <p class="step section-header" id="basic-stuff" data-dx="0" data-dy="1000" data-dz="0">Basic Stuff</p>
 
@@ -239,7 +227,7 @@ f1 = makeIncrementor(1);
 f2 = makeIncrementor(2);
 f1(1);	// returns 2
 f2(1);	// returns 3</code></pre>
-    <img src="img/closure.jpg">
+    <img src="{{ url_for('static', filename='img/closure.jpg') }}">
     </div>
 
     <div id="prototypes-summary" class="step">
@@ -346,7 +334,7 @@ Cat.prototype = new Animal;
         <h1>The DOM</h1>
         <hr>
         <div class="image">
-            <img width="256" alt="DOM-model" src="img/DOM-model.svg"/>
+            <img width="256" alt="DOM-model" src="{{ url_for('static', filename='img/DOM-model.svg') }}"/>
             <div class="caption">
                 <a href="http://commons.wikimedia.org/wiki/File%3ADOM-model.svg">
                     By Birger Eriksson (Own work) [CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons
@@ -391,7 +379,7 @@ Cat.prototype = new Animal;
     </div>
 
     <div class="step section-header" id="jquery" data-dx="-1100" data-dy="0" data-dz="0">
-        <p><img src="img/jquery.jpg"/></p>
+        <p><img src="{{ url_for('static', filename='img/jquery.jpg') }}"/></p>
         <p class="subtitle">Don't code JavaScript without it.</p>
     </div>
 
@@ -497,7 +485,7 @@ $('#someid').addClass('newclass');</pre></code>
         $('#woo').toggle('slow');
     });
 });</code></pre>
-                <img id="woo" src="img/woo.jpg" />
+                <img id="woo" src="{{ url_for('static', filename='img/woo.jpg') }}" />
             </div>
             <div class="tab" id="jquery-tabs-plugins">
                 Check out <a href="http://plugins.jquery.com/">plugins.jquery.com</a>.
@@ -530,7 +518,7 @@ $('#someid').addClass('newclass');</pre></code>
     <div id="asynchronicity" class="step">
         <h1>More on Asynchronicity</h1>
         <hr>
-        <img src="img/callback.jpg">
+        <img src="{{ url_for('static', filename='img/callback.jpg') }}">
         <ul>
             <li>The browser is strictly single-threaded.</li>
             <li>The whole DOM may not be available when your code runs.</li>
@@ -627,7 +615,7 @@ p.then(function() { console.log("Me too!"); });</code></pre>
 
     <div class="section-header step extra-credit">
         <p>My favorite part...</p>
-        <img src="img/favorite.jpg" />
+        <img src="{{ url_for('static', filename='img/favorite.jpg') }}" />
     </div>
 
     <div id="combining" class="step">
@@ -745,7 +733,7 @@ if ("ontouchstart" in document.documentElement) {
 </script>
 
 <!-- make impress go -->
-<script src="js/impress.js"></script>
+<script src="{{ url_for('static', filename='js/impress.js') }}"></script>
 <script>$(document).on('impress-go', function() { impress().init(); })</script>
 
 

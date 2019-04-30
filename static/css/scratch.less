@@ -272,25 +272,23 @@ pre {
 
 #title {
     padding: 0;
-    .an-overview {
-        font-size: 64px;
-        position: absolute;
-        top: -50px;
+    .the {
+        font-size: 100px;
+        position: relative;
+        top: 130px;
+        left: 200px;
         -webkit-transform: translateZ(20px);
         -moz-transform:    translateZ(20px);
         -ms-transform:     translateZ(20px);
         -o-transform:      translateZ(20px);
         transform:         translateZ(20px);
     }
-    .of {
-        position: relative;
-        top: 70px;
-        right: 80px;
-    }
-    .byline {
+    .subtitle {
+        font-size: 100px;
         position: relative;
         top: -75px;
-        left: 325px;
+        left: 380px;
+        line-height: 1em;
     }
     h1 {
         font-size: 190px;
@@ -305,33 +303,17 @@ pre {
     h1 {
         color: @emph_content;
     }
-    div.bullets {
-        float: left;
-        font-size: 24pt;
-        width: 350px;
-        margin-right: 75px;
-        ul {
-            list-style: disc;
-            ul {
-                color: @secondary_content;
-                padding-left:50px;
-            }
-        }
-        #heart {
-            font-family: 'Inconsolata';
-        }
-    }
     div.social {
-        float: right;
         div {
             font-family: 'Inconsolata';
             font-size: 18pt;
             padding: 10px;
         }
-        img {
-            height: 48px;
+        i {
+            font-size: 48px;
             vertical-align: middle;
             padding-right: 20px;
+            color: @blue;
         }
     }
 }
