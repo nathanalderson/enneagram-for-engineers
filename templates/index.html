@@ -52,165 +52,100 @@
             <div><i class="fab fa-keybase"></i>keybase.io/nathanalderson</div>
             <div><i class="fas fa-globe"></i>nathanalderson.com</div>
         </div>
-    </div>
-
-    <div id="whyjs" class="step" data-x="1000" data-z="-3000" data-scale="1" data-rotate-y="0">
-        <h1>Why Javascript?</h1>
-        <div id="reasons">
-            <ul>
-                <li>It drives the web, and the web drives, like, everything</li>
-                <li>Lightweight, fast (now)</li>
-                <li>Multi-paradigm (procedural, functional, OO)</li>
-                <li>Great at asynchronicity</li>
-                <li>Great free tools and resources</li>
-            </ul>
+        <div class="notes">
+            * Pronouns
         </div>
     </div>
 
-    <div id="the-good-parts" class="step" data-dx="1000">
-        <h1>Why not?</h1>
-        <div id="reasons">
-            <img src="{{ url_for('static', filename='img/thegoodparts.jpg') }}" />
+    <div id="whatisit" class="step" data-x="1000" data-z="-3000" data-scale="1" data-rotate-y="0">
+        <h1>What is the Enneagram?</h1>
+        <img id="enneagram-img" class="substep"
+             src="{{ url_for('static', filename='img/enneagram.svg') }}" />
+        <div class="notes">
+            * question: who's heard of it?
+            * question: who knows their type?
+            * A personality type system
+            * 9 personalities / archetypes / ways of being/seeing
+            * "ennea" (greek for 9) "gram" (greek for figure)
         </div>
     </div>
 
-    <div id="java-vs-js" class="step">
-        <p>Java
-        <span class="analogy">is to</span>
-        Javascript</p>
-        <p class="analogy">as</p>
-        <p>C
-        <span class="analogy">is to</span></p>
-        <p id="ceelo"><span class="hidden appear">Cee Lo</span></p>
-        <p><img class="hidden appear" src="{{ url_for('static', filename='img/ceelo.jpg') }}" /></p>
-    </div>
-
-    <div id="history" class="step">
-        <h1>Boring History</h1>
-        <hr/>
-        <ul>
-            <li>Born at Netscape around 1995 as "LiveScript".</li>
-            <li>Quickly renamed to JavaScript.</li>
-            <li>Support added to IE in v3.0 in 1996.</li>
-            <li>Standardized as ECMAScript in 1997.</li>
-            <li>Now on ECMAScript v5.1, with v6.0 in progress.</li>
-        </ul>
-    </div>
-
-    <div id="tools" class="step">
-        <h1>Tools</h1>
-        <div id="reasons">
-            <h2>A Good Web Browser</h2>
-            <img src="{{ url_for('static', filename='img/chrome.png') }}"/>Chrome
-            <img src="{{ url_for('static', filename='img/firefox.png') }}"/>Firefox
-            <img src="{{ url_for('static', filename='img/safari.png') }}"/>Safari
-            <h2>Other Web Browsers</h2>
-            <img src="{{ url_for('static', filename='img/ie7.png') }}"/>IE7, IE8, IE9...
-            <h2>Debugger</h2>
-            <img src="{{ url_for('static', filename='img/chrome.png') }}"/>Chrome
-            <img src="{{ url_for('static', filename='img/firebug.png') }}"/>Firebug
-            <h2>Text Editor</h2>
-            <img src="{{ url_for('static', filename='img/vim.png') }}"/>Vim (of course)
-            <h2>Non-browser Environment</h2>
-            <img src="{{ url_for('static', filename='img/node.png') }}"/>node.js
+    <div id="youmeanlike" class="step" data-dx="1500">
+        <h1>You mean like Myers-Briggs?</h1>
+        <div class="notes">
+            * MBTI : Enneagram :: C++ : Haskell
+            * Both turing complete programming languages, but...
+            * Completely different paradigm
+            * Haskell actually has a good type system (burn!)
+            * If you didn't like MBTI (etc), maybe you'll like Enneagram
+            * If you *do* like MBTI, Enneagram will expand your mind
+            * Other systems: DISC, That one with the four animals?, Hogwarts houses?
         </div>
     </div>
 
-    <img class="step" id="codez" src="{{ url_for('static', filename='img/c0dez.jpg') }}" data-dx="0" data-rotate-y="90" data-dz="-1000" data-dy="0"/>
-
-    <p class="step section-header" id="basic-stuff" data-dx="0" data-dy="1000" data-dz="0">Basic Stuff</p>
-
-    <div class="step" id="types">
-        <h1>Types</h1>
-        <hr/>
-        <pre><code class="javascript">//types
-var num  = 1;
-var num2 = 2.0;   // no real distinction between floats and ints
-var str  = "You are likely to be eaten by a grue.";
-var bool = true;
-var arr  = [1,2,"three"];
-arr[0];           // 1
-var obj  = {key:"value"}
-obj.key;          // "value"
-obj["key"];       // "value"
-var re   = /(omg )?kittens!{5,}/  // regular expression
-var val  = null
-var val  = undefined;
-var add  = function(arg1, arg2) {
-    return arg1 + arg2;
-};
-add(1,2)          // 3 </code></pre>
+    <div id="background" class="step">
+        <h1>Background</h1>
+        <div class="notes">
+            * Drawn from a number of ancient wisdom traditions
+            * Mostly oral until 1960s/70s when Oscar Ichazo formalized it
+            * 80s/90s: Richard Rohr, Don Riso, and others increased its popularity
+            * Not scientifically or clinically based
+            * MBTI isn't very reproducible, not scientifically rigorous either
+            * is it useful? does it ring true?
+        </div>
     </div>
 
-    <div class="step" id="truthiness" data-dy="800">
-        <h1>Truthiness and Falsiness</h1>
-        <hr/>
-        <pre><code class="javascript">if(false || 0 || null || undefined || "") {
-    console.log("won't print; they're all falsey");
-}
-else if(true && 1 && "anything" && [] && {}) {
-    console.log("will print; they're all truthy");
-}
-
-if (1 == "1")  {
-    console.log("will print; loosely equal");
-}
-if (1 === "1") {
-    console.log("will not print; not strictly equal");
-}</code></pre>
+    <div class="step" id="thenumbers" data-dx="0" data-rotate-y="90" data-dz="-1000" data-dy="0">
+        <h1>The numbers...</h1>
     </div>
 
-    <div class="step" id="its-dynamic" data-dy="500">
-        <h1>It's Dynamic!</h1>
-        <hr/>
-        <pre><code class="javascript">// it's dynamic!
-var x = 1;
-x = "two";</code></pre>
-
+    <div class="step number" id="number1" data-dx="0" data-dy="1000" data-dz="0">
+        <h1>1</h1>
+        <p>The Perfectionist</p>
     </div>
 
-    <div class="step" id="everythings-an-object" data-dy="400">
-        <h1>Everything's an Object</h1>
-        <hr/>
-        <pre><code class="javascript">var x = 1;
-x.member = "I'm a member variable!";
-console.log(x);       // prints 1
-console.log(x.member) // prints "I'm a member variable"
-        </code></pre>
+    <div class="step number" id="number2" data-dx="0" data-dy="1000" data-dz="0">
+        <h1>2</h1>
+        <p>The Helper</p>
     </div>
 
-    <div class="step" id="first-class-functions" data-dy="700">
-        <h1>First Class Functions</h1>
-        <hr/>
-        <pre><code class="javascript">&gt; function printArgs(a,b) { console.log(a,b); }
-undefined
-&gt; printArgs
-[Function: printArgs]
-&gt; (printArgs instanceof Object)
-true
-&gt; var printArgsAlias = printArgs
-undefined
-&gt; printArgsAlias === printArgs
-true
-&gt; printArgs.c = 3
-3
-&gt; function decorate(printer,a,b) {
-... console.log("The arguments are...");
-... printer(a,b)
-... }
-undefined
-&gt; decorate(printArgs,1,2)
-The arguments are...
-1 2
-undefined
-&gt; decorate(printArgs,1)
-The arguments are...
-1 undefined
-undefined</code></pre>
+    <div class="step number" id="number3" data-dx="0" data-dy="1000" data-dz="0">
+        <h1>3</h1>
+        <p>The Performer</p>
+    </div>
+
+    <div class="step number" id="number4" data-dx="0" data-dy="1000" data-dz="0">
+        <h1>4</h1>
+        <p>The Romantic</p>
+    </div>
+
+    <div class="step number" id="number5" data-dx="0" data-dy="1000" data-dz="0">
+        <h1>5</h1>
+        <p>The Investigator</p>
+    </div>
+
+    <div class="step number" id="number6" data-dx="0" data-dy="1000" data-dz="0">
+        <h1>6</h1>
+        <p>The Loyalist</p>
+    </div>
+
+    <div class="step number" id="number7" data-dx="0" data-dy="1000" data-dz="0">
+        <h1>7</h1>
+        <p>The Enthusiast</p>
+    </div>
+
+    <div class="step number" id="number8" data-dx="0" data-dy="1000" data-dz="0">
+        <h1>8</h1>
+        <p>The Challenger</p>
+    </div>
+
+    <div class="step number" id="number9" data-dx="0" data-dy="1000" data-dz="0">
+        <h1>9</h1>
+        <p>The Peacemaker</p>
     </div>
 
     <p class="step section-header" id="less-basic" data-rotate-dy="90"
-        data-dx="-1000" data-dy="0" data-dz"0">Less-Basic Stuff</p>
+        data-dx="-1000" data-dy="0" data-dz"0">Takeaways</p>
 
     <div id="closures" class="step" data-rotate-dy="0" data-dx="-500" data-dy="-1000" data-dz="600">
         <h1>Closures</h1>
@@ -230,455 +165,7 @@ f2(1);	// returns 3</code></pre>
     <img src="{{ url_for('static', filename='img/closure.jpg') }}">
     </div>
 
-    <div id="prototypes-summary" class="step">
-        <h1>Prototype-based Class System</h1>
-        <hr>
-        <table class="fullwidth-table">
-          <thead>
-            <tr>
-              <th scope="col">Class-based (Java)</th>
-              <th scope="col">Prototype-based (JavaScript)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Class and instance are distinct entities.</td>
-              <td>All objects are instances.</td>
-            </tr>
-            <tr>
-              <td>Define a class with a class definition; instantiate a class with constructor methods.</td>
-              <td>Define and create a set of objects with constructor functions.</td>
-            </tr>
-            <tr>
-              <td>Create a single object with the <code>new</code> operator.</td>
-              <td>Same.</td>
-            </tr>
-            <tr>
-              <td>Construct an object hierarchy by using class definitions to define subclasses of existing classes.</td>
-              <td>Construct an object hierarchy by assigning an object as the prototype associated with a constructor function.</td>
-            </tr>
-            <tr>
-              <td>Inherit properties by following the class chain.</td>
-              <td>Inherit properties by following the prototype chain.</td>
-            </tr>
-            <tr>
-              <td>Class definition specifies <em>all</em> properties of all instances of a class. Cannot add properties dynamically at run time.</td>
-              <td>Constructor function or prototype specifies an <em>initial set</em> of properties. Can add or remove properties dynamically to individual objects or to the entire set of objects.</td>
-            </tr>
-            <caption>Source: <a
-                    href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Details_of_the_Object_Model">Mozilla Developer Network</a></caption>
-          </tbody>
-        </table>
-    </div>
-
-    <div id='prototypes-example' class="step">
-        <h1>Inheritance with Prototypes</h1>
-        <hr>
-        <div class='left'>
-            <h2>C++</h2>
-            <hr>
-            <pre><code class="cpp">class Animal {
-public:
-  Animal(string name)
-    : name(name) {}
-  virtual void speak() {}
-  string name;
-};
-
-class Cat : public Cat {
-public:
-  Cat(string name, bool cheezburger)
-    : Animal(name)
-
-    , canHas(cheezburger) {}
-  virtual void speak() {
-    if(canHas)
-      cout &lt;&lt; name &lt;&lt; " purrs";
-    else
-      cout &lt;&lt; name &lt;&lt; " hisses";
-  }
-  bool canHas;
-}; </code></pre>
-        </div>
-        <div class='right'>
-            <h2>JavaScript</h2>
-            <hr>
-            <pre><code class="javascript">
-
-function Animal(name) {
-  this.name = name;
-  this.speak = function() {}
-
-}
-
-
-
-function Cat(name, cheezburger) {
-  this.base = Animal;
-  this.base(name);
-  this.canHas = cheezburger;
-  this.speak = function() {
-    if(this.canHas)
-      console.log(this.name+" purrs");
-    else
-      console.log(this.name+" hisses");
-  }
-
-}
-Cat.prototype = new Animal;
-        </pre></code>
-        </div>
-    </div>
-
-    <div id="dom" class="step">
-        <h1>The DOM</h1>
-        <hr>
-        <div class="image">
-            <img width="256" alt="DOM-model" src="{{ url_for('static', filename='img/DOM-model.svg') }}"/>
-            <div class="caption">
-                <a href="http://commons.wikimedia.org/wiki/File%3ADOM-model.svg">
-                    By Birger Eriksson (Own work) [CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons
-                </a>
-            </div>
-        </div>
-        <p>The DOM is the "Document Object Model".  It is a structural representation of the webpage
-        and provides a way for your script to interact with what the user sees.</p>
-    </div>
-
-    <div id="dom-manip" class="step">
-        <h1 id="dom-manip-title">Manipulating the DOM</h1>
-        <hr>
-        <script language="javascript">
-            function addone() {
-                field = document.getElementById('myfield');
-                field.value = Number(field.value) + 1;
-            }
-            function subone(field) {
-                field.value = Number(field.value) - 1;
-            }
-        </script>
-        <form name="myform">
-            <input type="text" id="myfield" value="100" size="5">
-            <input type="button" value=" + " onclick="addone()">
-            <input type="button" value=" - " onclick="subone(myfield);">
-        </form>
-        <pre><code class="html">&lt;script language="javascript"&gt;
-    function addone() {
-        field = document.getElementById('myfield');
-        field.value = Number(field.value) + 1;
-    }
-    function subone(field) {
-        field.value = Number(field.value) - 1;
-    }
-&lt;/script&gt;
-&lt;form name="myform"&gt;
-&lt;input type="text" id="myfield" value="100" size="5"&gt;
-&lt;input type="button" value=" + " onclick="addone();"&gt;
-&lt;input type="button" value=" - " onclick="subone(myfield);"&gt;
-&lt;/form&gt;</code></pre>
-    </div>
-
-    <div class="step section-header" id="jquery" data-dx="-1100" data-dy="0" data-dz="0">
-        <p><img src="{{ url_for('static', filename='img/jquery.jpg') }}"/></p>
-        <p class="subtitle">Don't code JavaScript without it.</p>
-    </div>
-
-    <div id="jquery-overview" class="step">
-        <h1>jQuery does several things for you...</h1>
-        <hr>
-        <script> $(function() { $("#jquery-tabs").tabs(); }); </script>
-        <div id="jquery-tabs">
-            <ul class="tabs">
-                <li><a href="#jquery-tabs-better-dom-manip">Better<br/>DOM Manipulation</a></li>
-                <li><a href="#jquery-tabs-better-events">Better<br/>event handling</a></li>
-                <li><a href="#jquery-tabs-cross-browser">Cross-browser<br/>support</a></li>
-                <li><a href="#jquery-tabs-ajax">AJAX</a></li>
-                <li><a href="#jquery-tabs-animation">Animation</a></li>
-                <li><a href="#jquery-tabs-plugins">Lots of<br/>plugins</a></li>
-            </ul>
-            <div class="tab" id="jquery-tabs-better-dom-manip">
-                <h2>Powerful selectors</h2>
-                <pre><code class="javascript">$('#someid')
-$('.someclass')
-$("div.active .hidden:first")
-$('#listid &gt; li')</pre></code>
-                <h2>Traversal</h2>
-                <pre><code class="javascript">$('#someid').parent().sibling(".someclass")</pre></code>
-                <h2>Inspection</h2>
-                <pre><code class="javascript">$('#jquery-overview h1').text();  // The title of this slide
-$('#checkboxid').is(':checked');  // e.g. true</pre></code>
-                <h2>Manipulation</h2>
-                <pre><code class="javascript">$('#jquery-overview h1').text('I love every kind of cat!');
-$('#someid').addClass('newclass');</pre></code>
-            </div>
-            <div class="tab" id="jquery-tabs-better-events">
-                <script language="javascript">
-                $(document).ready(function() {
-                    $('#demo-button').on('click', function() {
-                        theButton = $(this);
-                        theButton.val(theButton.val() + '!');
-                    });
-                });
-                </script>
-                <input type="button" id="demo-button" value="Click me!"/>
-                <pre><code id="demo-button-code">&lt;input type="button" id="demo-button" value="Click me!"/&gt;</pre></code>
-                <hr>
-                <h2>Sign up for click events</h2>
-                <pre><code class="javascript">$(document).ready(function() {
-    $('#demo-button').click(function() {
-        theButton = $(this);
-        theButton.val(theButton.val() + '!');
-    });
-});</pre></code>
-                <h2><em>Trigger</em> a click event...</h2>
-                <pre><code class="javascript">$('#demo-button').click();</pre></code>
-                <h2>Or for every button now and in the future...</h2>
-                <pre><code class="javascript">$(document).on('click', '.button', function() { ... });</pre></code>
-                <h2>Or only once per element...</h2>
-                <pre><code class="javascript">$(document).one('click', '.button', function() { ... });</pre></code>
-            </div>
-                <div class="tab" id="jquery-tabs-cross-browser">
-                <h2>The following works on all major browsers... except IE &lt; 9:</h2>
-                <pre><code class="javascript">[1,2,3].forEach(function(elem, index, arr) {
-    console.log("arr[" + index + "] = " + elem);
-});</pre></code>
-                <h2>Instead, use:</h2>
-                <pre><code class="javascript">$.each([1,2,3], function(index, elem) {
-    console.log("arr[" + index + "] = " + elem);
-});</pre></code>
-                <h2>Similarly:</h2>
-                <pre><code class="javascript">"  str   ".trim()</code></pre>
-                <h2>Doesn't work in IE &lt; 9, but:</h2>
-                <pre><code class="javascript">$.trim("  str   ")</code></pre>
-                <h2>does.</h2>
-            </div>
-            <div class="tab" id="jquery-tabs-ajax">
-                <script language="javascript">
-                    $(document).ready(function() {
-                        $('#ajax-demo-button').click(function() { $('#ajax-demo').load("/ajax.txt"); });
-                        $('#ajax-reset-button').click(function() { $('#ajax-demo').text("Reset"); });
-                    });
-                </script>
-                <input type="button" id="ajax-demo-button" value="Load AJAX"/>
-                <input type="button" id="ajax-reset-button" value="Reset"/>
-                <div id="ajax-demo">This text will get replaced dynamically</div>
-                <hr>
-                <pre><code>$(document).ready(function() {
-    $('#ajax-demo-button').click(function() {
-        $('#ajax-demo').load("/ajax.txt");
-    });
-    $('#ajax-reset-button').click(function() {
-        $('#ajax-demo').text("Reset");
-    });
-});</code></pre>
-            </div>
-            <div class="tab" id="jquery-tabs-animation">
-                <script language="javascript">
-                    $(document).ready(function() {
-                        $('#awesome-button').click(function() { $('#woo').toggle('slow'); });
-                    });
-                </script>
-                <input type="button" id="awesome-button" value="Click for AWESOME!"/>
-                <hr>
-                <pre><code>$(document).ready(function() {
-    $('#awesome-button').click(function() {
-        $('#woo').toggle('slow');
-    });
-});</code></pre>
-                <img id="woo" src="{{ url_for('static', filename='img/woo.jpg') }}" />
-            </div>
-            <div class="tab" id="jquery-tabs-plugins">
-                Check out <a href="http://plugins.jquery.com/">plugins.jquery.com</a>.
-                <p>Especially useful is <a href="http://jqueryui.com">jQuery-ui</a>.</p>
-                <hr>
-                <script>
-                  $(function() {
-                    $( "#slider-vertical" ).slider({
-                      orientation: "vertical",
-                      range: "min",
-                      min: 0,
-                      max: 100,
-                      value: 60,
-                      slide: function( event, ui ) {
-                        $( "#amount" ).val( ui.value );
-                      }
-                    });
-                    $( "#amount" ).val( $( "#slider-vertical" ).slider( "value" ) );
-                  });
-                  </script>
-                <p>
-                  <label for="amount">Awesome:</label>
-                  <input type="text" id="amount" style="border: 0; color: #f6931f; font-weight: bold;" />
-                </p>
-                <div id="slider-vertical" style="height: 200px;"></div>
-            </div>
-        </div>
-    </div>
-
-    <div id="asynchronicity" class="step">
-        <h1>More on Asynchronicity</h1>
-        <hr>
-        <img src="{{ url_for('static', filename='img/callback.jpg') }}">
-        <ul>
-            <li>The browser is strictly single-threaded.</li>
-            <li>The whole DOM may not be available when your code runs.</li>
-            <li>Think "event-driven".</li>
-            <li>Learn to embrace the callback.</li>
-        </ul>
-    </div>
-
-    <div id="yikes" class="step">
-        <h1>Yikes!</h1>
-        <hr>
-        <h2>What does this print?</h2>
-        <pre><code class="javascript">for (var i = 1; i &lt;= 3; i++) {
-  setTimeout(function() { console.log(i); }, 0);
-}</code></pre>
-        <div class="answer appear hidden">
-            <h2>Answer:</h2>
-            <code>4 4 4</code>
-        </div>
-    </div>
-
-    <div class="section-header step extra-credit" data-x="0" data-y="-3000" data-z="3000"
-        data-rotate-x="00" data-rotate-y="0" data-rotat-z="0">
-        <p>Extra Credit</p>
-        <span class="subtitle">jQuery Deferreds!</span>
-    </div>
-
-    <div id="deferreds" class="step" data-dx="1000">
-        <h1>What are Promises?</h1>
-        <hr>
-        <p>Promises (sometimes called futures) are a way of handling asynchronous code more
-        elegantly than callbacks allow. "Deferred"s are jQuery's implementation of the JavaScript
-        Promises/A API.  In jQuery, a Deferred is an object which contains a promise and which
-        can be resolved.  A Promise allows users to attach handlers and determine the state.</p>
-        <p>Many jQuery functions now return Promises by default.</p>
-    </div>
-
-    <div id="wait" class="step">
-        <h1>First, let's make a function that returns a promise</h1>
-        <hr>
-        <pre><code class="javascript">$.wait = function(time) {
-    var d = $.Deferred();
-    setTimeout(d.resolve, time);
-    return d.promise();
-}</code></pre>
-    </div>
-
-    <div id="using-wait" class="step">
-        <h1>We can use our snazzy new function like this:</h1>
-        <hr>
-        <pre><code class="javascript">$.wait(1000).then(function() {
-    console.log("done!");
-})</code></pre>
-    </div>
-
-    <div id="using-wait-or" class="step">
-        <h1>Or, we could save the promise and attach more handlers...</h1>
-        <hr>
-        <pre><code class="javascript">var p = $.wait(1000);
-p.then(function() { console.log("I'm done!"); });
-p.then(function() { console.log("Me too!"); });</code></pre>
-    </div>
-
-    <div id="chainable" class="step">
-        <h1>Actually, they're chainable</h1>
-        <hr>
-        <pre><code class="javascript">$.wait(1000)
-.then(function() { console.log("I'm done!"); })
-.then(function() { console.log("Me too!"); });</code></pre>
-    </div>
-
-    <div id="what-if" class="step">
-        <h1>But what if everything's not rainbows and unicorns?</h1>
-        <hr>
-        <pre><code class="javascript">$.wait = function(time) {
-    var d = $.Deferred();
-    if(Math.round(Math.random))
-        setTimeout(d.resolve, time);
-    else
-        setTimeout(d.reject, time);
-    return d.promise();
-}</code></pre>
-    </div>
-
-    <div id="failures" class="step">
-        <h1>We can handle failures easily</h1>
-        <hr>
-        <pre><code class="javascript">$.wait(1000)
-.done(function() { console.log("Success! :) ") })
-.done(function() { console.log("More success.") })
-.fail(function() { console.log("Failure. :( ") })
-.always(function() { console.log("The end.") });</code></pre>
-    </div>
-
-    <div class="section-header step extra-credit">
-        <p>My favorite part...</p>
-        <img src="{{ url_for('static', filename='img/favorite.jpg') }}" />
-    </div>
-
-    <div id="combining" class="step">
-        <h1>We can combine promises.</h1>
-        <hr>
-        <pre><code class="javascript">var p1 = $.wait(1000);
-var p2 = $.wait(2000);
-
-$.when(p1, p2)
-.done(function() { console.log("Success! :) ") })
-.fail(function() { console.log("Failure. :( ") })
-    </div>
-
-    <div id="finally" class="step" data-dx="1000">
-        <h1>Final notes</h1>
-        <hr>
-        <ul>
-            <li>You can add a handler any time.  If the promise has already resolved/rejected,
-            the handler will run immediately as appropriate.</li>
-            <li>There are ways to monitor progress on a deferred.</li>
-            <li>There are ways of modifying the success/fail status of a referred during the handler
-            chain.</li>
-        </ul>
-    </div>
-
-    <div id="references" class="step" data-x="-5000" data-y="-5000" data-z="5000"
-        data-rotate-dx="20" data-rotate-dy="-20" data-rotate-dz="0">
-        <h1>Resources</h1>
-        <hr>
-        <ul>
-            <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript">Mozilla Developer Network</a></li>
-            <li><a href="http://learn.jquery.com/javascript-101/">jQuery JavaScript 101</a></li>
-            <li><a href="http://jquery.com/">jQuery.com</a></li>
-            <li>NOT w3schools (see <a href="http://w3fools.com">w3fools.com</a>)</li>
-        </ul>
-        <h1>References</h1>
-        <hr>
-        <ul>
-            <li><a href="http://eng.wealthfront.com/2012/12/jquerydeferred-is-most-important-client.html">This</a> wealthfrontEngineering aricle.</li>
-            <li><a href="http://www.intridea.com/blog/2011/2/8/fun-with-jquery-deferred">This</a> intridea article.</li>
-            <li>Several <a href="http://stackoverflow.com">Stack Overflow</a> answers.</li>
-        </ul>
-    </div>
-
-    <div id="tools-i-used" class="step" data-dx="0" data-dy="600" data-dz="300"
-        data-rotate-dx="0" data-rotate-dy="0" data-rotate-dz="0">
-        <h1>Tools used in this presentation</h1>
-        <hr>
-        <ul>
-            <li><a href="https://github.com/bartaz/impress.js/">Impress.js</a></li>
-            <li><a href="http://ethanschoonover.com/solarized">Solarized Theme</a></li>
-            <li><a href="http://lesscss.org/">LESS</a> dynamic stylesheets</li>
-            <li>Google <a href="https://developers.google.com/speed/libraries/devguide">hosted libraries</a> and <a href="https://developers.google.com/fonts/">fonts</a></li>
-            <li><a href="http://git-scm.com/">git</a> and <a href="http://github.com">GitHub</a></li>
-            <li><a href="http://jquery.com">jQuery</a> and <a href="http://jqueryui.com">jQuery UI</a></li>
-            <li><a href="http://www.linuxjournal.com/content/tech-tip-really-simple-http-server-python">Python web server</a> (for development)</li>
-            <li><a href="http://builder.cheezburger.com/builder/">Cheezburger.com</a> builder</li>
-            <li><a href="http://highlight.js">highlight.js</a></li>
-            <li><a href="http://google.com/chrome">Chrome</a> browser</li>
-        </ul>
-    </div>
-
-</div>
+<div>
 
 <!-- deltas! -->
 <script>

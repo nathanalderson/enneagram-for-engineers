@@ -1,0 +1,106 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" width="300" height="300">
+
+<title>Enneagram</title>
+
+<defs><style type="text/css"><![CDATA[
+polyline, line, circle {
+	fill:none;
+	stroke: black;
+	stroke-width: 1;
+}
+text {
+	font-size: 18pt;
+	text-anchor: middle;
+	font-family: serif;
+	fill: black;
+}
+]]></style></defs>
+
+  <metadata
+     id="Metadata">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>ENNEAGRAM</dc:title>
+        <dc:date>05.02.2008</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Twisp</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title></dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>Enneagram</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description>Enneagram of Personality</dc:description>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title></dc:title>
+          </cc:Agent>
+        </dc:contributor>
+        <cc:license
+           rdf:resource="http://web.resource.org/cc/PublicDomain" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://web.resource.org/cc/PublicDomain">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+
+
+
+<g transform="translate(150,150)">
+
+	<polyline points="
+0, -100
+-86.6025404, 50
+86.6025404, 50
+0, -100
+	" />
+
+	<polyline points="
+-64.278761, -76.6044443
+-34.2020143,93.9692621
+-98.4807753, -17.3648178
+64.278761, -76.6044443
+34.2020143,93.9692621
+98.4807753, -17.3648178
+-64.278761, -76.6044443
+" />
+
+
+
+<g transform="translate(0,9)">
+<text x="77.1345131623847" y="-91.9253331742774">1</text>
+<text x="118.176930361465" y="-20.8377813200316">2</text>
+<text x="103.923048454133" y="60">3</text>
+<text x="41.0424171990803" y="112.763114494309">4</text>
+<text x="-41.0424171990803" y="112.763114494309">5</text>
+<text x="-103.923048454133" y="60">6</text>
+<text x="-118.176930361465" y="-20.8377813200316">7</text>
+<text x="-77.1345131623847" y="-91.9253331742774">8</text>
+<text x="0" y="-120">9</text>
+</g>
+
+
+
+<circle cx="0" cy="0" r="100" />
+</g>
+</svg>
