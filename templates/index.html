@@ -60,8 +60,13 @@
 
     <div id="whatisit" class="step" data-x="1000" data-z="-3000" data-scale="1" data-rotate-y="0">
         <h1>What is the Enneagram?</h1>
-        <img id="enneagram-img" class="substep"
-             src="{{ url_for('static', filename='img/enneagram.svg') }}" />
+        <div id="enneagram-img" class="substep">
+            <img src="{{ url_for('static', filename='img/enneagram.svg') }}" />
+            <p class="credits">
+            <strong>image credit:</strong>
+            https://commons.wikimedia.org/wiki/File:Enneagram.svg
+            </p>
+        </div>
         <div class="notes">
             - question: who's heard of it?
             - question: who knows their type?
@@ -292,7 +297,7 @@
         </div>
     </div>
 
-    <div class="step" id="features" data-rotate-dy="90" data-dx="-1000" data-dy="0" data-dz"0">
+    <div class="step" id="features" data-dy="0" data-dx="-500" data-rotate-dy="90">
         <h1>Other Features</h1>
         <ul>
             <li>Wings</li>
@@ -301,25 +306,30 @@
         </ul>
     </div>
 
-    <div id="closures" class="step" data-rotate-dy="0" data-dx="-500" data-dy="-1000" data-dz="600">
-        <h1>Closures</h1>
-        <hr/>
-        <p>A closure is an object consisting of a function <em>and</em> the environment (local variables)
-        in which the function was created.  Basically, it's function that remembers its context.</p>
-        <pre><code>function makeIncrementor(i) {
-  return function(x) {
-    return x+i;
-  }
-}
-
-f1 = makeIncrementor(1);
-f2 = makeIncrementor(2);
-f1(1);	// returns 2
-f2(1);	// returns 3</code></pre>
-    <img src="{{ url_for('static', filename='img/closure.jpg') }}">
+    <div class="step" id="wings" data-rotate-dy="0" data-dy="-1000" data-dz="600">
+        <img src="{{ url_for('static', filename='img/wings.png') }}" />
+        <p class="credits">
+        <strong>image credit:</strong>
+        https://enneagramgirl.wordpress.com/2018/05/28/enneagram-wings-of-7/
+        </p>
     </div>
 
-<div>
+    <div class="step" id="triads">
+        <img src="{{ url_for('static', filename='img/centers.gif') }}" />
+        <img src="{{ url_for('static', filename='img/triads.gif') }}" />
+        <p class="credits">
+        <strong>image credit:</strong>
+        https://www.enneagraminstitute.com/how-the-enneagram-system-works
+        </p>
+    </div>
+
+    <div class="step" id="arrows">
+        <img src="{{ url_for('static', filename='img/arrows.jpeg') }}" />
+        <p class="credits">
+        <strong>image credit:</strong>
+        https://commons.wikimedia.org/wiki/File:Enneagram_integration_and_desintegration.JPG
+        </p>
+    </div>
 
 <!-- deltas! -->
 <script>
