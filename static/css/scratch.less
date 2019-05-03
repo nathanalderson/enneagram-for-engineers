@@ -60,7 +60,7 @@ body {
     line-height: 1;
 }
 ol, ul {
-    list-style: disc outside none;
+    list-style: disc inside none;
 }
 blockquote, q {
     quotes: none;
@@ -321,7 +321,7 @@ pre {
     }
 }
 
-#whatisit, #the-good-parts {
+#whatisit {
     h1 {
         font-size: 200%;
         vertical-align: middle;
@@ -332,6 +332,39 @@ pre {
     img#enneagram-img.substep.substep-visible {
         height: 300px;
         transition: height 0.5s;
+    }
+}
+
+#youmeanlike {
+    h1 {
+        color: @yellow;
+    }
+    .isto {
+        font-family: 'Inconsolata';
+        color: @cyan;
+    }
+    .as {
+        font-family: 'Inconsolata';
+        color: @cyan;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    p.burn {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #haskell {
+        position: absolute;
+        width: 300px;
+        left: 0;
+        right: 0;
+        top:15px;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 0.6;
     }
 }
 
@@ -369,267 +402,8 @@ pre {
     font-size: 20vw;
 }
 
-#tools {
-    h1 {
-        font-size: 120%;
-        display: inline-block;
-        width: 150px;
-        /* float: left; */
-        color: @green;
-        vertical-align: middle;
-    }
-    div#reasons {
-        h2 {
-            font-size: 24pt;
-            color: @blue;
-        }
-        display: inline-block;
-        width: 700px;
-        /* float: right; */
-        font-size: 18pt;
-        border-left: 1px solid @body_text;
-        vertical-align: middle;
-        padding-left: 50px;
-    }
-    img {
-        width: 70px;
-        vertical-align: middle;
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-}
-
-#codez {
-    width: 500px;
-}
-
-.section-header {
-    text-align: center;
-    font-size: 1000%;
-    .subtitle {
-        font-size: 20%;
-    }
-}
-
-
-#types {
-    code {
-        font-size: 20pt;
-    }
-}
-
-#truthiness {
-    width: 1000px;
-    code {
-        font-size: 24pt;
-    }
-}
-
-#first-class-functions {
-    max-height: 800px;
-    code {
-        font-size: 18pt;
-        max-height: 500px;
-    }
-}
-
-#closures {
-    p {
-        font-size: 22pt;
-    }
-    code {
-        float: left;
-        width: 50%;
-        font-size: 20pt;
-    }
-    img {
-        width: 40%;
-    }
-}
-
-#prototypes-summary {
-    h1 {
-        font-size: 36pt;
-    }
-    hr {
-        margin-bottom: 20px;
-    }
-    table {
-        background: @bg;
-        th {
-            font-size: 120%;
-            font-weight: bold;
-            background: @base02;
-            color: @blue;
-            border: 1px solid @base01;
-        }
-        tr {
-            border: 1px solid @base01;
-        }
-        td {
-            padding: 5px;
-            border: 1px solid @base01;
-        }
-        caption {
-            caption-side: bottom;
-        }
-        border: 1px solid;
-        font-size: 14pt;
-    }
-}
-
-#prototypes-example {
-    h1 {
-        font-size: 32pt;
-    }
-    code {
-        font-size: 17pt;
-        margin: 0px;
-        padding: 5px;
-    }
-    div {
-        h2 {
-            color: @violet;
-            font-size: 22px;
-        }
-        hr {
-            width: 75%;
-            margin-left: 0;
-        }
-        display: block;
-        width: 50%;
-        float: left;
-    }
-}
-
-#dom {
-    div.image {
-        float: left;
-        width: 500px;
-        img {
-            padding: 30px;
-            width: 500px;
-        }
-        .caption {
-            font-size:6pt;
-        }
-    }
-    p {
-        font-size: 20pt;
-    }
-}
-
-#dom-manip {
-    form {
-        margin-top: 20px;
-        width: 200px;
-        input {
-        }
-    }
-    code {
-        font-size: 20pt;
-    }
-}
-
-#jquery {
-    img {
-        box-shadow: 4px 4px 8px rgba(0, 0, 0, .8);
-    }
-}
-
-#jquery-overview {
-    h1 {
-        font-size: 36pt;
-    }
-    h2 {
-        color: @magenta;
-    }
-    #jquery-tabs {
-        background: rgba(255,255,255,.7);
-    }
-    .tabs {
-        font-size: 12pt;
-        a:hover,
-        a:focus {
-            text-shadow: none;
-        }
-    }
-    .tab {
-        font-size: 18pt;
-        height: 500px;
-    }
-    code {
-        font-size: 18pt;
-        padding: 5px;
-        padding-left: 50px;
-    }
-    /* #jquery-tabs-better-events code, #jquery-tabs-better-events h2 { */
-        /* padding: 5px; */
-        /* font-size: 18pt; */
-    /* } */
-    .ui-tabs-anchor {
-        height: 40px;
-        max-width: 160px;
-        overflow: wrap;
-    }
-    #hide-code {
-        border: 1px solid;
-    }
-    #woo {
-        display: none;
-        position: relative;
-        top: -200px;
-        left: 300px;
-    }
-    #jquery-tabs-plugins {
-        a {
-            color: @blue;
-        }
-    }
-    #demo-button {
-        float: left;
-    }
-    #demo-button-code {
-        font-size: 14pt;
-        padding-left: 20px;
-    }
-}
-
-#asynchronicity {
-    ul {
-        font-size: 32pt;
-    }
-    img {
-        float: right;
-    }
-}
-
-#yikes {
-    .answer code {
-        color: @cyan;
-    }
-}
-
-#deferreds {
-    p {
-        font-size: 28pt;
-        padding: 20px;
-    }
-}
-
-#references {
-    ul {
-        font-size: 18pt;
-    }
-}
-
-#tools-i-used {
-    h1 {
-        font-size: 38pt;
-    }
-    ul {
-        font-size: 30pt;
-    }
+#features {
+    h1 { color: @green }
 }
 
 hr {
@@ -867,4 +641,9 @@ hr {
 .substep.substep-visible {
     opacity: 1;
     transition: opacity 0.5s;
+}
+
+#impressconsole div#notes {
+    font-family: monospace;
+    white-space: pre-line;
 }

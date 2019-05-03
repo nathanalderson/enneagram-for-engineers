@@ -35,7 +35,7 @@
     <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
 </div>
 
-<div id="impress">
+<div id="impress" data-console-css="{{ url_for('static', filename='css/console.css') }}">
 
     <div id="title" class="step" data-x="0" data-y="0" data-z="0" data-scale="6">
         <span class="the">The</span>
@@ -53,7 +53,8 @@
             <div><i class="fas fa-globe"></i>nathanalderson.com</div>
         </div>
         <div class="notes">
-            * Pronouns
+            - Pronouns
+            - NOT an expert
         </div>
     </div>
 
@@ -62,36 +63,49 @@
         <img id="enneagram-img" class="substep"
              src="{{ url_for('static', filename='img/enneagram.svg') }}" />
         <div class="notes">
-            * question: who's heard of it?
-            * question: who knows their type?
-            * A personality type system
-            * 9 personalities / archetypes / ways of being/seeing
-            * "ennea" (greek for 9) "gram" (greek for figure)
+            - question: who's heard of it?
+            - question: who knows their type?
+            - A personality type system
+            - 9 personalities / archetypes / ways of being/seeing
+            - "ennea" (greek for 9) "gram" (greek for figure)
         </div>
     </div>
 
     <div id="youmeanlike" class="step" data-dx="1500">
         <h1>You mean like Myers-Briggs?</h1>
+        <p class="substep">
+            MBTI
+            <span class="isto">:</span>
+            Enneagram
+            <span class="as">::</span>
+            C++
+            <span class="isto">:</span>
+            Haskell
+        </p>
+        <p class="burn substep">
+            <img src="{{ url_for('static', filename='img/burn.gif') }}" />
+            <img id="haskell" src="{{ url_for('static', filename='img/haskell.png') }}" />
+        </p>
         <div class="notes">
-            * MBTI : Enneagram :: C++ : Haskell
-            * Both turing complete programming languages, but...
-            * Completely different paradigm
-            * Haskell actually has a good type system (burn!)
-            * If you didn't like MBTI (etc), maybe you'll like Enneagram
-            * If you *do* like MBTI, Enneagram will expand your mind
-            * Other systems: DISC, That one with the four animals?, Hogwarts houses?
+            - MBTI : Enneagram :: C++ : Haskell
+            - Both turing complete programming languages, but...
+            - Completely different paradigm
+            - Haskell actually has a good type system (burn!)
+            - If you didn't like MBTI (etc), maybe you'll like Enneagram
+            - If you *do* like MBTI, Enneagram will expand your mind
+            - Other systems: DISC, That one with the four animals?, Hogwarts houses?
         </div>
     </div>
 
     <div id="background" class="step">
         <h1>Background</h1>
         <div class="notes">
-            * Drawn from a number of ancient wisdom traditions
-            * Mostly oral until 1960s/70s when Oscar Ichazo formalized it
-            * 80s/90s: Richard Rohr, Don Riso, and others increased its popularity
-            * Not scientifically or clinically based
-            * MBTI isn't very reproducible, not scientifically rigorous either
-            * is it useful? does it ring true?
+            - Drawn from a number of ancient wisdom traditions
+            - Mostly oral until 1960s/70s when Oscar Ichazo formalized it
+            - 80s/90s: Richard Rohr, Don Riso, and others increased its popularity
+            - Not scientifically or clinically based
+            - MBTI isn't very reproducible, not scientifically rigorous either
+            - is it useful? does it ring true?
         </div>
     </div>
 
@@ -102,50 +116,190 @@
     <div class="step number" id="number1" data-dx="0" data-dy="1000" data-dz="0">
         <h1>1</h1>
         <p>The Perfectionist</p>
+        <div class="notes">
+            - AKA "reformer"
+            - Everything can be improved (self, others, process)
+            - Redo others work (perceived as critical)
+            - Intense inner critic
+            - Precise, completionist
+            - Impulse for justice
+
+            AS AN ENGINEER:
+            - Favorite language: C (can optimize)
+            - 100% line coverage
+            - Great testers/QA
+            - Never ships anything (never good enough)
+        </div>
     </div>
 
     <div class="step number" id="number2" data-dx="0" data-dy="1000" data-dz="0">
         <h1>2</h1>
         <p>The Helper</p>
+        <div class="notes">
+            - empathetic
+            - Sense and meet needs in others
+            - *need* to be needed
+            - (unconsciously) expect something in return
+            - codependence (unhealthy)
+            - must learn to ask for their own needs
+            - Our culture often represses women into 2s
+            - Can teach us about true connection
+
+            AS ENGINEER:
+            - Favorite language: what's yours?
+            - Pair programming
+            - Great documentation
+            - Advocate for the customer
+            - Great agile leader/scrum master
+        </div>
     </div>
 
     <div class="step number" id="number3" data-dx="0" data-dy="1000" data-dz="0">
         <h1>3</h1>
         <p>The Performer</p>
+        <div class="notes">
+            - aka "achiever"
+            - External validation
+            - Image conscious
+            - avoid failure at all cost
+            - can become anything to please a group
+            - seek admiration (2's want appreciation)
+            - great salespeople
+
+            AS ENGINEER:
+            - Uses EMACS and likes Clojure (they sound impressive)
+            - work well under pressure and deadlines
+            - Great at technical marketing/sales
+        </div>
     </div>
 
     <div class="step number" id="number4" data-dx="0" data-dy="1000" data-dz="0">
         <h1>4</h1>
         <p>The Romantic</p>
+        <div class="notes">
+            - aka "individualist"
+            - melodramatic, sensitive
+            - feel deeply, emotional roller coaster
+            - need: AUTHENTICITY, to stand out, to be known
+            - often creative
+            - comfortable with melancholy, pain of others
+            - can be seen as dark or cynical
+            - hate shallowness
+            - push and pull in relationship
+
+            AS ENGINEER:
+            - favorite language: Scheme (because "reasons", obscurity)
+            - great outside-the-box thinkers, creative
+            - might have to reign them in
+        </div>
     </div>
 
     <div class="step number" id="number5" data-dx="0" data-dy="1000" data-dz="0">
         <h1>5</h1>
         <p>The Investigator</p>
+        <div class="notes">
+            - aka "observer"
+            - info -> knowledge -> wisdom (perceive -> fully understand)
+            - like systems and frameworks, clarity, precision
+            - don't like to depend on others
+            - hoard resources (knowledge, energy)
+            - *measured* energy (can seem aloof)
+            - like new things, explorers
+
+            AS ENGINEER:
+            - Favorite language: Haskell
+            - most detailed bug reports ever
+            - become experts
+        </div>
     </div>
 
     <div class="step number" id="number6" data-dx="0" data-dy="1000" data-dz="0">
         <h1>6</h1>
         <p>The Loyalist</p>
+        <div class="notes">
+            - committed, security-oriented
+            - reliable, hard-working, responsible, trustworthy
+            - anxious, prepare for every possible disaster
+            - prone to (self-)doubt, pessimism
+            - need security, certitude, reassurance
+            - like support and guidance
+
+            AS ENGINEER:
+            - favorite language: Java or Haskell - different kinds of safety
+            - also: 100% line coverage
+            - GREAT testers, troubleshooters, operations
+            - keep the process running and the product shipping
+        </div>
     </div>
 
     <div class="step number" id="number7" data-dx="0" data-dy="1000" data-dz="0">
         <h1>7</h1>
         <p>The Enthusiast</p>
+        <div class="notes">
+            - fun! experiences! optimism!
+            - hate hard things, avoid pain
+            - always planning the next thing, FOMO
+            - charming, magnetic (get out of trouble)
+            - trouble with committment
+
+            AS ENGINEER:
+            - gifs! emoji!
+            - favorite language: ruby
+            - love new projects, crazy ideas, prototyping
+            - 0% test coverage
+        </div>
     </div>
 
     <div class="step number" id="number8" data-dx="0" data-dy="1000" data-dz="0">
         <h1>8</h1>
         <p>The Challenger</p>
+        <div class="notes">
+            - confidence! intensity!
+            - (even if they don't feel it)
+            - stir the pot, rock the boat
+            - perceived as angry, combative, aggressive
+            - need power, control
+            - fear betrayal, being controlled
+            - tend to over-do everything (work, exercise, eat, whatever)
+            - our culture likes male 8s, female 8s "are bitchy"
+
+            AS ENGINEER:
+            - favorite language: they all suck!
+            - tend to become project leads
+            - provide drive, focus
+            - visionaries
+        </div>
     </div>
 
     <div class="step number" id="number9" data-dx="0" data-dy="1000" data-dz="0">
         <h1>9</h1>
         <p>The Peacemaker</p>
+        <div class="notes">
+            - desire connection and inner peace
+            - avoid conflict at all costs
+            - use empathy and self denial to achieve it
+            - often forget self, struggle iwht assertion
+            - when anger does come out it is passive aggressive, snide, and withering
+            - lowest energy on the enneagram
+            - "start out slow and taper off from there"
+            - healthy: naturally spiritual, *SO* much empathy
+
+            AS ENGINEER:
+            - favorite language: hate favorites (or maybe python?)
+            - keep a team together an cohesive
+            - balance concerns of R&amp;D, sales, etc.
+            - great leaders (if they get there)
+        </div>
     </div>
 
-    <p class="step section-header" id="less-basic" data-rotate-dy="90"
-        data-dx="-1000" data-dy="0" data-dz"0">Takeaways</p>
+    <div class="step" id="features" data-rotate-dy="90" data-dx="-1000" data-dy="0" data-dz"0">
+        <h1>Other Features</h1>
+        <ul>
+            <li>Wings</li>
+            <li>Triads</li>
+            <li>Arrows</li>
+        </ul>
+    </div>
 
     <div id="closures" class="step" data-rotate-dy="0" data-dx="-500" data-dy="-1000" data-dz="600">
         <h1>Closures</h1>
