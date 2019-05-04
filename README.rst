@@ -28,15 +28,15 @@ Resources
 If you're just interested in the resources mentioned in the talk, those are replicated here for
 easier reference:
 
-* Ian Cron and Suzanne Stabile
+- Ian Cron and Suzanne Stabile
     - *The Liturgists Podcast* `episode 37`_
     - *The Road Back To You* (website_) (podcast_) (book_)
     - `Typology Podcast`_
-* enneagraminstitute.com_
-* Sarajane Case
+- enneagraminstitute.com_
+- Sarajane Case
     - `Enneagram and Coffee Podcast`_
     - `Club Enneagram`_
-* Enneagram Tests
+- Enneagram Tests
     - `Eclectic Energies`_ (free)
     - `Enneagram Institute`_ ($12)
     - `Ian Cron`_ ($60/$120)
@@ -46,9 +46,9 @@ easier reference:
 .. _podcast: https://www.theroadbacktoyou.com/podcast
 .. _book: https://www.goodreads.com/book/show/28268515-the-road-back-to-you
 .. _Typology Podcast: https://www.typologypodcast.com/
-.. _ennagraminstitued.com: https://www.enneagraminstitute.com/
+.. _enneagraminstitute.com: https://www.enneagraminstitute.com/
 .. _Enneagram and Coffee Podcast: https://enneagramandcoffee.libsyn.com/
 .. _Club Enneagram: https://sarajane-case.mykajabi.com/club-enneagram
 .. _Eclectic Energies: https://www.eclecticenergies.com/enneagram/test
-.. _Eneagram Institute: https://tests.enneagraminstitute.com/
+.. _Enneagram Institute: https://tests.enneagraminstitute.com/
 .. _Ian Cron: https://ianmorgancron.com/assessment#row--58717
