@@ -423,6 +423,13 @@ pre {
 
 #finding-your-type {
     h1 { color: @yellow }
+    .substep {
+        max-height: 0;
+    }
+    .substep.substep-visible {
+        max-height: 300px;
+        transition: max-height 0.5s;
+    }
 }
 
 #takeaways {
