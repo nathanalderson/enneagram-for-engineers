@@ -51,4 +51,4 @@ easier reference:
 .. _Club Enneagram: https://sarajane-case.mykajabi.com/club-enneagram
 .. _Eclectic Energies: https://www.eclecticenergies.com/enneagram/test
 .. _Enneagram Institute: https://tests.enneagraminstitute.com/
-.. _Ian Cron: https://ianmorgancron.com/assessment#row--58717
+.. _Ian Cron: https://ianmorgancron.com/assessment
