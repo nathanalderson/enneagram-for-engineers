@@ -53,13 +53,7 @@
 
     <div id="whatisit" class="step" data-x="1000" data-z="-3000" data-scale="1" data-rotate-y="0">
         <h1>What is the Enneagram?</h1>
-        <div id="enneagram-img" class="substep">
-            <img src="{{ url_for('static', filename='img/enneagram.svg') }}" />
-            <p class="credits">
-            <strong>image credit:</strong>
-            https://commons.wikimedia.org/wiki/File:Enneagram.svg
-            </p>
-        </div>
+        <img class="substep" src="{{ url_for('static', filename='img/enneagram.svg') }}" />
         <div class="notes">
             - question: who's heard of it?
             - question: who knows their type?
@@ -82,7 +76,7 @@
         </p>
         <p class="burn substep">
             <img src="{{ url_for('static', filename='img/burn.gif') }}" />
-            <img id="haskell" src="{{ url_for('static', filename='img/haskell.png') }}" />
+            <img id="haskell" src="{{ url_for('static', filename='img/haskell.svg') }}" />
         </p>
         <div class="notes">
             - MBTI : Enneagram :: C++ : Haskell
@@ -303,25 +297,18 @@
         <img src="{{ url_for('static', filename='img/wings.png') }}" />
         <p class="credits">
         <strong>image credit:</strong>
-        https://enneagramgirl.wordpress.com/2018/05/28/enneagram-wings-of-7/
+        Enneagram Girl: <a href="https://enneagramgirl.wordpress.com/2018/05/28/enneagram-wings-of-7/">
+            https://enneagramgirl.wordpress.com/</a> (used by permission)
         </p>
     </div>
 
     <div class="step" id="triads">
-        <img src="{{ url_for('static', filename='img/centers.gif') }}" />
-        <img src="{{ url_for('static', filename='img/triads.gif') }}" />
-        <p class="credits">
-        <strong>image credit:</strong>
-        https://www.enneagraminstitute.com/how-the-enneagram-system-works
-        </p>
+        <img src="{{ url_for('static', filename='img/centers.svg') }}" />
+        <img src="{{ url_for('static', filename='img/emotional-themes.svg') }}" />
     </div>
 
     <div class="step" id="arrows">
-        <img src="{{ url_for('static', filename='img/arrows.jpeg') }}" />
-        <p class="credits">
-        <strong>image credit:</strong>
-        https://commons.wikimedia.org/wiki/File:Enneagram_integration_and_desintegration.JPG
-        </p>
+        <img src="{{ url_for('static', filename='img/arrows.svg') }}" />
     </div>
 
     <div class="step" id="resources" data-rotate-dx="90" data-dx="0" data-dy="0" data-dz="500">

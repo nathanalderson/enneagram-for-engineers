@@ -325,11 +325,20 @@ pre {
     h1 {
         font-size: 200%;
         vertical-align: middle;
+        color: @green;
     }
-    div#enneagram-img.substep {
+    img {
+        display: block;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:20px;
+    }
+    .substep {
         height: 0;
     }
-    div#enneagram-img.substep.substep-visible {
+    .substep.substep-visible {
         height: 300px;
         transition: height 0.5s;
     }
@@ -364,7 +373,7 @@ pre {
         top:15px;
         margin-left: auto;
         margin-right: auto;
-        opacity: 0.6;
+        opacity: 0.8;
     }
 }
 
@@ -404,6 +413,19 @@ pre {
 
 #features {
     h1 { color: @green }
+}
+
+#triads {
+    width: 1200px;
+    img {
+        height: 375px;
+    }
+}
+
+#arrows {
+    img {
+        width: 500px;
+    }
 }
 
 .credits {
