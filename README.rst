@@ -45,7 +45,7 @@ Credits
 * The Haskell Logo on the same slide is my own derivative of an image from `Wikimedia Commons
   <https://commons.wikimedia.org/wiki/File:Haskell-Logo.svg>`_ which is public domain. I also
   release my derivative as public domain.
-* The image of the `seven with wings`_ from `Enneagram Girl`_ and is used by permission.
+* The image of the `seven with wings`_ is from `Enneagram Girl`_ and is used by permission.
 
 .. _enneagram circle: static/img/enneagram.svg
 .. _supa hot fire: static/img/burn.gif
